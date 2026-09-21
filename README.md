@@ -11,7 +11,7 @@
 ![Amplifier](https://img.shields.io/badge/front--end-INA126-blue)
 ![PCB](https://img.shields.io/badge/PCB-OrCAD-orange)
 
-<img src="assets/finger-ecg-board.jpg" alt="Minimalistic Finger ECG Board" width="560">
+<img src="assets/ecg-finger-board.png" alt="Minimalistic Finger ECG Board" width="560">
 
 </div>
 
