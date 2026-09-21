@@ -49,7 +49,7 @@ The project covered the complete PCB development workflow using **OrCAD Capture 
 - Custom component symbols and footprint assignment
 - PCB placement, routing, and ground configuration
 - NC Drill and manufacturing artwork generation
-- Real-time ECG waveform observation using an oscilloscope
+- Real-time ECG waveform acquisition and oscilloscope validation
 
 ---
 
@@ -336,22 +336,35 @@ The project demonstrated that successful biosignal acquisition depends not only 
 
 ---
 
-## Testing
+## Testing & Experimental Result
 
-The fabricated board was evaluated by connecting the electrode inputs to the body and observing the analog output with an oscilloscope.
+The fabricated board was evaluated by connecting the electrode inputs to the body and recording the analog ECG output.
 
 ### Test Procedure
 
-1. Connect the measurement electrodes.
+1. Connect the measurement electrodes to the body.
 2. Connect the reference/ground electrode.
 3. Power the ECG acquisition circuit.
-4. Connect the analog output to an oscilloscope.
-5. Monitor the output waveform in real time.
-6. Adjust the oscilloscope voltage and time scales.
-7. Evaluate ECG waveform visibility and signal stability.
-8. Check for excessive noise or interference.
+4. Connect the analog output to the measurement system.
+5. Record the ECG output in real time.
+6. Evaluate waveform morphology and signal stability.
+7. Check for excessive noise or interference.
 
-The completed board demonstrated the practical process of acquiring a physiological electrical signal using a custom analog front-end and PCB.
+### Measured ECG Waveform
+
+<p align="center">
+  <img src="assets/ecg-waveform.png" alt="Measured ECG waveform acquired from the custom ECG board" width="95%">
+</p>
+
+<p align="center">
+  <sub>Measured ECG waveform acquired from the fabricated ECG board, showing repeated cardiac cycles with identifiable P waves, QRS complexes, and T waves.</sub>
+</p>
+
+The recorded output demonstrates successful acquisition of the cardiac biopotential signal using the custom ECG board. Repeated cardiac cycles are visible across the recording, with prominent **R peaks** and distinguishable **P-QRS-T morphology**.
+
+The waveform confirms operation of the complete acquisition chain from the body-surface electrodes through the **INA126 instrumentation-amplifier front end**, subsequent analog signal-conditioning circuitry, and final analog output.
+
+This experimental result demonstrates that the fabricated PCB was capable of acquiring and amplifying ECG activity in real time.
 
 ---
 
@@ -420,6 +433,7 @@ Component footprints, pin mappings, placement, routing, and drill dimensions mus
 
 ### Hardware Testing
 
+- ECG signal acquisition
 - Oscilloscope operation
 - Analog waveform observation
 - Circuit debugging
@@ -477,7 +491,7 @@ finger-ecg-board/
 
 **Thar Htet Nyan**
 
-Department of Biomedical Engineering
+Department of Biomedical Engineering  
 Soonchunhyang University
 
 ---
